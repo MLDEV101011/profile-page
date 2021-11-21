@@ -33,7 +33,7 @@ export const projects = [
     description:
       "Database to store viewed movies and tv series with login functionality.",
     image: theWatcher,
-    link: "https://github.com/MLDEV101011/WatcherDB",
+    link: "https://thewatcherwatches.azurewebsites.net/",
   },
 ];
 
