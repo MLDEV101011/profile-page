@@ -39,8 +39,8 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=dubois,+in&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
+          <div className="p-2 bg-gray-900 relative flex flex-wrap py-5 rounded shadow-md">
+            <div className="pl-0 lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
@@ -49,7 +49,7 @@ export default function Contact() {
                 Dubois, IN 47527
              </p>
             </div>
-            <div className="pl-0 lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <div className="pl-0 lg:w-1/2 px-5 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
@@ -59,7 +59,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <a href="tel:18126391684" className="leading-relaxed text-gray-500">812-693-1684</a>
+              <a href="tel:18126391684" className="leading-relaxed text-gray-500">812-639-1684</a>
             </div>
           </div>
         </div>
