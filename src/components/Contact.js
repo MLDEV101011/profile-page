@@ -21,10 +21,8 @@ export default function Contact() {
       body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))
+      .then(setName(""), setEmail(""), setMessage(""))
       .catch((error) => alert(error));
-      setName("");
-      setEmail("");
-      setMessage("");
   }
 
   return (
@@ -50,19 +48,27 @@ export default function Contact() {
               <p className="mt-1 text-gray-500">
                 5471 E Church St <br />
                 Dubois, IN 47527
-             </p>
+              </p>
             </div>
             <div className="pl-0 lg:w-1/2 px-5 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a href="mailto: mlarson.dev@gmail.com" className="text-indigo-400 leading-relaxed">
+              <a
+                href="mailto: mlarson.dev@gmail.com"
+                className="text-indigo-400 leading-relaxed"
+              >
                 mlarson.dev@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <a href="tel:18126391684" className="leading-relaxed text-gray-500">812-639-1684</a>
+              <a
+                href="tel:18126391684"
+                className="leading-relaxed text-gray-500"
+              >
+                812-639-1684
+              </a>
             </div>
           </div>
         </div>
@@ -71,12 +77,14 @@ export default function Contact() {
           data-netlify="true"
           name="contact"
           onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Interested in working together? Send me a message and I'll get back to you as soon as possible.
+            Interested in working together? Send me a message and I'll get back
+            to you as soon as possible.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -105,7 +113,8 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
+              className="leading-7 text-sm text-gray-400"
+            >
               Message
             </label>
             <textarea
@@ -117,7 +126,8 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
             Submit
           </button>
         </form>
